@@ -3,10 +3,11 @@ import React, {Component} from 'react';
 import {TextInput, StyleSheet, Text, View, ImageBackground, Image, TouchableOpacity} from 'react-native';
 import { createAppContainer, createStackNavigator, navigationOptions } from 'react-navigation';
 
-import bgImage from './src/images/background.jpg'
-import logo from'./src/images/BeerGo!.png'
+import bgImage from './src/images/background.jpg';
+import logo from'./src/images/BeerGo!.png';
 
-import register from './src/components/register'
+import register from './src/components/register';
+import dashboard from './src/components/dashboard';
 
 class App extends React.Component{
 
@@ -25,13 +26,16 @@ class App extends React.Component{
             />
             <TextInput
               style={styles.textEmail}
+              secureTextEntry={true}
               placeholder={'Senha'}
               underlineColorAndroid='transparent'
               placeholderTextColor='white'
             />
           </View>
           <View>
-            <TouchableOpacity style={styles.loginButton}>
+            <TouchableOpacity style={styles.loginButton} onPress={()=>{
+              this.props.navigation.navigate('Dashboard');
+            }} >
               <Text style={styles.loginText}>Login</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.registrarButton} onPress={()=>{
@@ -99,6 +103,12 @@ const styles = StyleSheet.create({
 const AppNavigator = createStackNavigator({
   Home: {
     screen: App,
+    navigationOptions: ()=>({
+      header: null,
+    }),
+  },
+  Dashboard: {
+    screen: dashboard,
     navigationOptions: ()=>({
       header: null,
     }),

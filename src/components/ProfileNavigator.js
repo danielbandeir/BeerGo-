@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 
 import {TextInput, StyleSheet, Text, View, ImageBackground, Image, TouchableOpacity} from 'react-native';
-import { createAppContainer, createStackNavigator, navigationOptions } from 'react-navigation';
 import  ImagePicker from 'react-native-image-picker';
 
 import bgImage from '../images/background.jpg';
+
+import firebase from '@firebase/app';
 
 const options = {
     title: 'Select Avatar',
@@ -25,7 +26,20 @@ const options = {
   };
 
 
-class register extends React.Component{
+class ProfileNavigator extends React.Component{
+
+    componentWillMount(){
+        var config = {
+            apiKey: "AIzaSyBR9MT51q938MNylD0Y324FGF-XEroqn4A",
+            authDomain: "beergo-28ad5.firebaseapp.com",
+            databaseURL: "https://beergo-28ad5.firebaseio.com",
+            projectId: "beergo-28ad5",
+            storageBucket: "beergo-28ad5.appspot.com",
+            messagingSenderId: "294518420928"
+          };
+          firebase.initializeApp(config);
+                
+    }
 
     constructor(props){
         super(props);
@@ -88,6 +102,22 @@ class register extends React.Component{
     }
 
     register=()=>{
+        
+        var addUser = firebase.database().ref("users/");
+        addUser.push().set({
+            name:'ola',
+            idade:'creu',
+        });
+        addUser.push().set({
+            name: this.state.name,
+            email: this.state.email,
+            senha: this.state.senha,
+            state: this.state.states,
+            city: this.state.city,
+            street: this.state.street,
+            number: this.statenumber,
+            cel: this.state.cel,
+        });
     }
 
 
@@ -253,16 +283,4 @@ const styles = StyleSheet.create({
     }
 });
 
-
-const AppNavigator = createStackNavigator({
-    Home: {
-      screen: register,
-      navigationOptions: ()=>({
-        header: null,
-      }),
-    },
-      initialRouteName: "Home"
-    }
-  );
-  
-  export default createAppContainer(AppNavigator);
+export default ProfileNavigator;
