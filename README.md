@@ -52,3 +52,24 @@ react-native run-android or react-native run-ios
     "react-native-image-picker": "^0.28.0",
     "react-navigation": "^3.2.3"
 ```
+
+## Develop Process
+
+# Research
+
+At the first we have the problem about how we sell the products, how is our public and what we'll do for client come back. So about the beers, what is the highest price the customer want to pay for his beer?, in this step we build a spreadsheet to search the price of beers, to see how is the profit about 1 year, 5 years and 10 years.
+
+Here you can see this profit [Planning](https://docs.google.com/spreadsheets/d/1w_cgNGFtSgNv0pcaqYGY_uetnW2xGwYtig1c7Vku3qM/edit?usp=sharing)
+
+# Prototype
+So, now we build a logo and the apresentation to sell our product, presenting the data from oue planning, about the UX Design and now we can prototype our app.
+
+We used the [Figma](www.figma.com) to build our prototype plataform, we focus on [Material Design](https://material.io/design/) to develop in best UI experience to user, we build tests from usability and compare each protype, at the end we find this prototype:
+
+<p align="center">
+  <img src="./src/images/prototype.png" width=100% title="BeerGo!">
+</p>
+
+# Dev
+at the end we start to develop our system using React Native, at this point we go finish soon, bye bye :)
+
