@@ -33,3 +33,23 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 ```
 
 Now you just have to run the .bashrc, **source .bashrc**.
+
+## Run project
+
+After all you have to enter in BeerGo folder, after this we have to run react-native.
+
+```
+react-native run-android or react-native run-ios
+```
+
+## Packages
+
+```
+    "firebase": "^5.8.3",
+    "react": "16.6.3",
+    "react-native": "0.58.4",
+    "react-native-gesture-handler": "^1.0.15",
+    "react-native-image-picker": "^0.28.0",
+    "react-native-router-flux": "^4.0.6",
+    "react-navigation": "^3.2.3"
+```
