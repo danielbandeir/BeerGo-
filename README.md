@@ -13,17 +13,14 @@ Vending machines is the new future, but have one problem, **how we can sell an a
 
 This project is dveloped using React Native.
 
-```
 Do the process to instal react-native-cli, node and NPM
 
 [React Native](https://facebook.github.io/react-native/docs/getting-started)
-```
+
 
 After install the React Native CLI, node and NPM, you have to install Android studio in your machine, to install the Android Sdk to run the code in your emulator or pyshics smartphone.
 
-```
 [Download and install Android Studio](https://developer.android.com/studio/)
-```
 
 Now you have to configure the Android Sdk to your environment. edit **$HOME/.bashrc** and put this code into the file.
 
