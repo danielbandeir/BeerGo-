@@ -50,6 +50,5 @@ react-native run-android or react-native run-ios
     "react-native": "0.58.4",
     "react-native-gesture-handler": "^1.0.15",
     "react-native-image-picker": "^0.28.0",
-    "react-native-router-flux": "^4.0.6",
     "react-navigation": "^3.2.3"
 ```
