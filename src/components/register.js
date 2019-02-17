@@ -133,7 +133,6 @@ class register extends React.Component{
                     />
                     <TextInput 
                         style={styles.textCity}
-                        secureTextEntry={true}
                         placeholder={'Cidade'}
                         underlineColorAndroid='transparent'
                         placeholderTextColor='white'
@@ -152,7 +151,6 @@ class register extends React.Component{
                     />
                     <TextInput 
                         style={styles.textState}
-                        secureTextEntry={true}
                         placeholder={'N°'}
                         underlineColorAndroid='transparent'
                         placeholderTextColor='white'

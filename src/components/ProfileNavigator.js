@@ -123,14 +123,13 @@ class ProfileNavigator extends React.Component{
 
     render(){
         return(
-            <ImageBackground source={bgImage} style={styles.backgroundContent} blurRadius={20}>
-                    <Text>{this.state.name}</Text>
+            <View style={styles.backgroundContent}>
                 <View>
                     <TextInput 
                         style={styles.textName}
                         placeholder={'Nome'}
                         underlineColorAndroid='transparent'
-                        placeholderTextColor='white'
+                        placeholderTextColor='black'
                         onChangeText={(name)=>this.setState({name})}
                         value={this.state.name}
                     />
@@ -138,7 +137,7 @@ class ProfileNavigator extends React.Component{
                         style={styles.textName}
                         placeholder={'E-mail'}
                         underlineColorAndroid='transparent'
-                        placeholderTextColor='white'
+                        placeholderTextColor='black'
                         onChangeText={(email)=>this.setState({email})}
                         value={this.state.email}
                     />
@@ -147,7 +146,7 @@ class ProfileNavigator extends React.Component{
                         secureTextEntry={true}
                         placeholder={'Senha'}
                         underlineColorAndroid='transparent'
-                        placeholderTextColor='white'
+                        placeholderTextColor='black'
                         onChangeText={(senha)=>this.setState({senha})}
                         value={this.state.senha}
                     />
@@ -157,16 +156,15 @@ class ProfileNavigator extends React.Component{
                         style={styles.textState}
                         placeholder={'PB'}
                         underlineColorAndroid='transparent'
-                        placeholderTextColor='white'
+                        placeholderTextColor='black'
                         onChangeText={(states)=>this.setState({states})}
                         value={this.state.states}
                     />
                     <TextInput 
                         style={styles.textCity}
-                        secureTextEntry={true}
                         placeholder={'Cidade'}
                         underlineColorAndroid='transparent'
-                        placeholderTextColor='white'
+                        placeholderTextColor='black'
                         onChangeText={(city)=>this.setState({city})}
                         value={this.state.city}
                     />
@@ -176,16 +174,15 @@ class ProfileNavigator extends React.Component{
                         style={styles.textCity}
                         placeholder={'Rua'}
                         underlineColorAndroid='transparent'
-                        placeholderTextColor='white'
+                        placeholderTextColor='black'
                         onChangeText={(street)=>this.setState({street})}
                         value={this.state.street}
                     />
                     <TextInput 
                         style={styles.textState}
-                        secureTextEntry={true}
                         placeholder={'N°'}
                         underlineColorAndroid='transparent'
-                        placeholderTextColor='white'
+                        placeholderTextColor='black'
                         onChangeText={(number)=>this.setState({number})}
                         value={this.state.number}
                     />
@@ -194,7 +191,7 @@ class ProfileNavigator extends React.Component{
                         style={styles.textName}
                         placeholder={'Celular'}
                         underlineColorAndroid='transparent'
-                        placeholderTextColor='white'
+                        placeholderTextColor='black'
                         onChangeText={(cel)=>this.setState({cel})}
                         value={this.state.cel}
                 />
@@ -202,11 +199,10 @@ class ProfileNavigator extends React.Component{
                 <View>
                     
                 <TouchableOpacity style={styles.loginButton} onPress={() => this.register}>
-                    <Text style={styles.RegisterText}>Registrar</Text>
+                    <Text style={styles.RegisterText}>Salvar</Text>
                 </TouchableOpacity>
                 </View>
-
-            </ImageBackground>
+            </View>
         );
     }
 }
@@ -228,8 +224,8 @@ const styles = StyleSheet.create({
         width: 250,
         borderWidth:1,
         borderColor: 'transparent',
-        borderBottomColor: 'white',
-        color: 'rgba(255,255,255,0.7)',
+        borderBottomColor: 'rgba(0,0,0,1)',
+        color: 'rgba(0,0,0,1)',
     },
     textState:{
         marginVertical: 10,
@@ -237,8 +233,8 @@ const styles = StyleSheet.create({
         width: 50,
         borderWidth:1,
         borderColor: 'transparent',
-        borderBottomColor: 'white',
-        color: 'rgba(255,255,255,0.7)',
+        borderBottomColor: 'rgba(0,0,0,1)',
+        color: 'rgba(0,0,0,1)',
     },
     textCity:{
         marginVertical: 10,
@@ -246,14 +242,14 @@ const styles = StyleSheet.create({
         width: 200,
         borderWidth:1,
         borderColor: 'transparent',
-        borderBottomColor: 'white',
-        color: 'rgba(255,255,255,0.7)',
+        borderBottomColor: 'rgba(0,0,0,1)',
+        color: 'rgba(0,0,0,1)',
     },
     touchableStyle:{
         marginTop:10,
         width: 250,
         height: 35,
-        backgroundColor: 'rgba(255,255,255,1)',
+        color: 'rgba(0,0,0,1)',
         borderRadius: 90,
         alignItems: 'center',
         justifyContent: 'center',
@@ -274,7 +270,7 @@ const styles = StyleSheet.create({
         borderRadius: 90,
         width: 250,
         height: 40,
-        backgroundColor: 'rgba(255,255,255,0.5)',
+        backgroundColor: 'rgba(0,0,0,1)',
         justifyContent: 'center',
         alignItems: 'center',
     },
