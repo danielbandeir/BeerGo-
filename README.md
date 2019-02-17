@@ -71,7 +71,7 @@ We used the [Figma](www.figma.com) to build our prototype plataform, we focus on
 </p>
 
 # Dev
-at the end we start to develop our system using React Native, at this point we go finish soon, bye bye :)
+at the end we start to develop our system using React Native, at this point we go finish soon, bye bye :) :dog:
 
 
 # To do
@@ -80,6 +80,6 @@ at the end we start to develop our system using React Native, at this point we g
 - [x] Find the soluction
 - [x] Protype
 - [x] Connect with firebase
-- [] Implement all frontend
-- [] Implement all backend
-- [] Fix bugs
+- [ ] Implement all frontend
+- [ ] Implement all backend
+- [ ] Fix bugs
