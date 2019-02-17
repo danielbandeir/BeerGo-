@@ -73,3 +73,13 @@ We used the [Figma](www.figma.com) to build our prototype plataform, we focus on
 # Dev
 at the end we start to develop our system using React Native, at this point we go finish soon, bye bye :)
 
+
+# To do
+
+- [x] Research process
+- [x] Find the soluction
+- [x] Protype
+- [x] Connect with firebase
+- [] Implement all frontend
+- [] Implement all backend
+- [] Fix bugs
