@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
+import { createStackNavigator, createAppContainer } from "react-navigation";
 
-import iconCard from '../images/card.svg';
+import addCreditCard from './addCreditCard';
 
 class BagNavigator extends Component{
 
@@ -30,7 +31,10 @@ class BagNavigator extends Component{
                         </TouchableOpacity>
                     </View>
                 </View>
-                <TouchableOpacity style={{marginTop:100,marginLeft:80, width:200, height:50, borderRadius:90, backgroundColor:"#32db23", alignItems:'center', justifyContent:'center'}}>
+                <TouchableOpacity style={{marginTop:100,marginLeft:80, width:200, height:50, borderRadius:90, backgroundColor:"#32db23", alignItems:'center', justifyContent:'center'}}
+                onPress={()=>{
+                    this.props.navigation.navigate('addCredit');
+                }}>
                             <Text style={{color:'rgba(255,255,255,1)'}}>Adicionar Cartão</Text>
                 </TouchableOpacity>
 
@@ -42,5 +46,14 @@ class BagNavigator extends Component{
     }
 
 }
+
+const AppNavigator = createStackNavigator({
+    addCredit: {
+      screen: addCreditCard
+    }
+  });
+
+
+const AppContainer = createAppContainer(AppNavigator);
 
 export default BagNavigator;
