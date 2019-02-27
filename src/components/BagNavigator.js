@@ -54,6 +54,6 @@ const AppNavigator = createStackNavigator({
   });
 
 
-const AppContainer = createAppContainer(AppNavigator);
+const AppContainer = createAppContainer(AppNavigator);//I STOPED HERE
 
 export default BagNavigator;
