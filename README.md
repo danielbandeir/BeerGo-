@@ -5,8 +5,6 @@
 # BeerGo!
 App developed for solve the problem for Phoebus in Hackathon SolvIEEE it! Plus 2019
 
-# SORRY, BUT THIS PROJECT DON'T HAVE MORE SUPPORT FOR REACT-NATIVE, NOW I'LL DEVELOP THIS PROJECT USING FLUTTER, THANKS!
-
 ## Description
 
 Vending machines is the new future, but have one problem, **how can we sell an alcoholic beverage and see if the buyer is a adult person?**. Now we have to develop the visual identity for the product, the solution and the app to solve all with idea that we have. Let's go!!
